@@ -10,12 +10,13 @@ const app = express();
 const port = process.env.PORT;
 
 // ✅ Middlewares
-app.use(cors({
-  origin: ['https://evangadifinali.berhangebre.com/',
-    'https://evangadi-forum-final-srjr.onrender.com'
-  ],
-  credentials:true
-}));
+app.use(cors());
+// app.use(cors({
+//   origin: ['https://evangadifinali.berhangebre.com/',
+//     'https://evangadi-forum-final-srjr.onrender.com'
+//   ],
+//   credentials: true
+// }));
 
 // Middleware to parse JSON
 app.use(express.json());
