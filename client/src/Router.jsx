@@ -77,7 +77,7 @@
 import { Route, Routes } from 'react-router-dom';
 
 import Answer from './pages/Answer/Answer.jsx';
-import AskQuestion from './Pages/AskQuestion/AskQuestion.jsx';
+import AskQuestion from './pages/AskQuestion/AskQuestion.jsx';
 import AuthPage from './Pages/Auth/AuthPage.jsx';
 import { Context } from './Components/Context.jsx';
 import EditQuestion from './Pages/EditQuestion/EditQuestion.jsx';
