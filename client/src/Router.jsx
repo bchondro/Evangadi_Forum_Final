@@ -4,7 +4,7 @@ import Answer from './pages/Answer/Answer.jsx';
 import AskQuestion from './pages/AskQuestion/AskQuestion.jsx';
 import AuthPage from './pages/Auth/AuthPage.jsx';
 import { Context } from './Components/Context.jsx';
-import EditQuestion from './Pages/EditQuestion/EditQuestion.jsx';
+import EditQuestion from './pages/EditQuestion/EditQuestion.jsx';
 import Footer from './Components/Footer/Footer.jsx';
 import Header from './Components/Header/Header.jsx';
 import HomePage from './pages/HomePage/HomePage.jsx';
