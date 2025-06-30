@@ -1,13 +1,13 @@
 import { Route, Routes } from 'react-router-dom';
 
-import Answer from './pages/Answer/Answer.jsx';
-import AskQuestion from './pages/AskQuestion/AskQuestion.jsx';
-import AuthPage from './pages/Auth/AuthPage.jsx';
+import Answer from './Pages/Answer/Answer.jsx';
+import AskQuestion from './Pages/AskQuestion/AskQuestion.jsx';
+import AuthPage from './Pages/Auth/AuthPage.jsx';
 import { Context } from './Components/Context.jsx';
-import EditQuestion from './pages/EditQuestion/EditQuestion.jsx';
+import EditQuestion from './Pages/EditQuestion/EditQuestion.jsx';
 import Footer from './Components/Footer/Footer.jsx';
 import Header from './Components/Header/Header.jsx';
-import HomePage from './pages/HomePage/HomePage.jsx';
+import HomePage from './Pages/HomePage/HomePage.jsx';
 import Howitwork from './Pages/Howitwork/Howitwork.jsx';
 import Profile from './Pages/Profile/Profile.jsx';
 import Protected from './Components/Protected.jsx';
@@ -63,7 +63,14 @@ function Router() {
             </Protected>
           }
         />
-        <Route path="/editquestion/:question_id" element={<EditQuestion />} />
+        <Route
+          path="/editquestion/:question_id"
+          element={
+            <Protected>
+              <EditQuestion />
+            </Protected>
+          }
+        />
       </Routes>
       <Footer />
     </>
