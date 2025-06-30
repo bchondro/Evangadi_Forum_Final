@@ -11,8 +11,8 @@ const port = process.env.PORT;
 
 // ✅ Middlewares
 app.use(cors({
-  origin: ['http://localhost:5173',
-    'https://evangadi-forum-final-three.vercel.app'
+  origin: ['https://evangadifinali.berhangebre.com/',
+    'https://evangadi-forum-final-srjr.onrender.com'
   ],
   credentials:true
 }));
