@@ -1,16 +1,19 @@
-import express from "express";
-import cors from "cors";
-import pool from "./config/databaseConfig.js";
-import { createAllTables } from "./controller/createAllTables.js";
-import userRouter from "./Routes/userRouter.js";
 import answerRouter from "./Routes/answerRouter.js";
+import cors from "cors";
+import { createAllTables } from "./controller/createAllTables.js";
+import express from "express";
+import pool from "./config/databaseConfig.js";
 import questionRouter from "./Routes/questionRouter.js";
+import userRouter from "./Routes/userRouter.js";
 
 const app = express();
 const port = process.env.PORT;
 
 // ✅ Middlewares
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:5173'],
+  credentials:true
+}));
 
 // Middleware to parse JSON
 app.use(express.json());
